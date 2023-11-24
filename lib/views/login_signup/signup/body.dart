@@ -6,6 +6,7 @@ import '../../../../services/constant/path_images.dart';
 import 'component/buyer/reg_buyer.dart';
 import 'component/seller/reg_seller.dart';
 
+
 class SelecltBuyerORSeller extends StatelessWidget {
   const SelecltBuyerORSeller({super.key});
 
@@ -14,8 +15,10 @@ class SelecltBuyerORSeller extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(fit: StackFit.expand, children: [
-        const Image(
-          image: AssetImage(PathImage.selectUser),
+        Image(
+          color: Colors.grey.withOpacity(0.5),
+          colorBlendMode: BlendMode.modulate,
+          image: const AssetImage(PathImage.selectUser),
           fit: BoxFit.fill,
         ),
         Center(
@@ -23,18 +26,18 @@ class SelecltBuyerORSeller extends StatelessWidget {
             // Image(
             //     image: const AssetImage(PathImage.rigeter),
             //     width: size.width / 2),
-            // const SizedBox(height: 15),
+            // const SizedBox(height: 10),
             const Text(
               'Sign Up as a?',
               style: TextStyle(
                   letterSpacing: 3,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.italic,
-                  fontSize: 35),
+                  fontSize: 40),
             ),
             // .animate().fadeIn().slideX(),
             //***********************Buyer button
-            // const SizedBox(height: 15),
+            // const SizedBox(height: 20),
             Container(
               width: size.width * 0.9,
               padding: const EdgeInsets.all(20),

@@ -9,8 +9,10 @@ class CustomTheme {
       // scaffoldBackgroundColor: AppColors.prColorblue,
       scaffoldBackgroundColor: Colors.white,
       appBarTheme: AppBarTheme(
-        elevation: 0,
-        color: AppColors.prColorblue,
+        elevation: 10,
+        color: Colors.transparent,
+        shadowColor: AppColors.prColorblue,
+        // color: AppColors.prColorblue,
         foregroundColor: AppColors.bgwhite,
         centerTitle: true,
         iconTheme: IconThemeData(color: AppColors.bgWhite),

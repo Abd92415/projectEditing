@@ -7,5 +7,6 @@ class PathImage {
   static const String clothes1 = 'assets/images/clothes.jpg';
   static const String clothes2 = 'assets/images/clothes2.jpg';
   static const String purfne = 'assets/images/purfan.jpg';
-  static const String selectUser = 'assets/images/screenSelectUser.png';
+  static const String selectUser = 'assets/images/BGSelectUser.jpeg';
+  static const String bgLogin = 'assets/images/BGlogin.jpeg';
 }

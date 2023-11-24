@@ -4,9 +4,9 @@ class KeyLang {
   static const String phone = 'phone number';
   static const String projectName = 'Project Name';
 
-  static const String buyer = 'Request product';
+  static const String buyer = 'Service Request';
   static const String email = 'Email';
-  static const String seller = 'Provide product';
+  static const String seller = 'Service Provider';
   static const String confirmPassword = 'Confirm Password';
   static const String password = 'Password';
   static const String login = 'Login';

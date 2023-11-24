@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:graduation_project/services/Firebase/buyer_firestore.dart';
 import 'package:graduation_project/services/Firebase/user_auth.dart';
+import 'package:graduation_project/services/constant/path_images.dart';
 import 'package:provider/provider.dart';
 
 import '../../../component/button.dart';
@@ -34,7 +35,9 @@ class _RegisterBuyerState extends State<RegisterBuyer> {
       child: Scaffold(
         extendBodyBehindAppBar: true,
         appBar: AppBar(
-          title: Text('Buyer', style: TextStyle(color: AppColors.bgwhite)),
+          elevation: 10,
+          title:
+              Text(KeyLang.buyer, style: TextStyle(color: AppColors.bgwhite)),
         ),
         body: SingleChildScrollView(
           child: SizedBox(
@@ -44,23 +47,29 @@ class _RegisterBuyerState extends State<RegisterBuyer> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Expanded(
-                  flex: 1,
                   child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 10),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        colorFilter: ColorFilter.mode(
+                            Colors.white.withOpacity(0.4), BlendMode.modulate),
+                        image: const AssetImage(PathImage.bgLogin),
+                      ),
+                    ),
                     alignment: Alignment.center,
                     child: const Text(
-                      'Welcome back, Create your account !',
+                      'Thank you for joining us! We\'re excited to have you as part of our online family',
                       style:
                           TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
                 Expanded(
-                  flex: 4,
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                      color: AppColors.bgwhite,
-                      borderRadius: const BorderRadius.only(
+                    decoration: const BoxDecoration(
+                      // color: AppColors.blackCardSocial,
+                      borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(50),
                         topRight: Radius.circular(50),
                       ),

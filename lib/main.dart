@@ -4,7 +4,7 @@ import 'package:graduation_project/services/Firebase/buyer_firestore.dart';
 import 'package:graduation_project/services/Firebase/item_firestore.dart';
 import 'package:graduation_project/services/Firebase/seller_firestore.dart';
 import 'package:graduation_project/services/Firebase/user_auth.dart';
-import 'package:graduation_project/views/splash/body_splash.dart';
+import 'package:graduation_project/views/login_signup/login/login.dart';
 import 'package:provider/provider.dart';
 
 import 'services/themes/custom_theme.dart';
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         theme: CustomTheme.lightTheme(context),
         darkTheme: CustomTheme.darkTheme(context),
         // home: const PageSplachScreen(),
-        home: const PageSplachScreen(),
+        home: const LoginPage(),
       ),
     );
   }

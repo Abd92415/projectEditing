@@ -1,6 +1,7 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:graduation_project/services/constant/path_images.dart';
+import 'package:graduation_project/services/language/generated/key_lang.dart';
 import 'package:graduation_project/views/home/sellerHome/component/pageNav/s_addproject.dart';
 import 'package:graduation_project/views/home/sellerHome/component/pageNav/s_chat.dart';
 import 'package:graduation_project/views/home/sellerHome/component/pageNav/s_home.dart';
@@ -36,8 +37,7 @@ class _PageHomeSellerState extends State<PageHomeSeller> {
 
   AppBar appBarSeller() {
     return AppBar(
-      elevation: 10,
-      title: const Text('Seller Page'),
+      title: const Text(KeyLang.seller),
       actions: const [
         CircleAvatar(backgroundImage: AssetImage(PathImage.splashPhoto)),
       ],
